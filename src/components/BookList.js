@@ -16,7 +16,7 @@ const BookList = () => {
       <h2>Book List</h2>
       <ul>
         {books.map(book => (
-          <li key={book.id}>
+          <li key={book.id} style={{listStyleType: 'none'}} >
             <Link to={`/books/${book.id}`}>{book.title}</Link>
           </li>
         ))}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import Home from "./Home";
 
 const AddBook = () => {
   const [title, setTitle] = useState("");
@@ -27,6 +28,7 @@ const AddBook = () => {
         <input type="text" value={author} onChange={(e) => setAuthor(e.target.value)} required />
       </div>
       <button type="submit">Add Book</button>
+      <Home />
     </form>
   );
 };
